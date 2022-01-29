@@ -1,5 +1,5 @@
 .storybook-button--primary {
- 
+  cursor: pointer;
   background-color: #1ea7fd;
 }
 .textColor{
@@ -9,4 +9,20 @@
   color: #333;
   background-color: transparent;
   box-shadow: rgba(0, 0, 0, 0.15) 0px 0px 0px 1px inset;
+  cursor: pointer;
+}
+.custom-size-small{
+  font-size: 10px;
+  width:60px !important;
+  height: 30px;
+}
+.custom-size-medium{
+  font-size: 15px;
+  width:120px;
+  height: 80px;
+}
+.custom-size-big{
+  font-size: 20px;
+  width:150px;
+  height: 100px;
 }
