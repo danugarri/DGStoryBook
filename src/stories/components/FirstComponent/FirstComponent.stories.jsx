@@ -1,6 +1,6 @@
-// YourComponent.stories.js|jsx
+// FirstComponent.stories.js|jsx
 
-import { YourComponent } from './YourComponent';
+import { FirstComponent } from './FirstComponent';
 
 //👇 This default export determines where your story goes in the story list
 export default {
@@ -8,12 +8,12 @@ export default {
   * See https://storybook.js.org/docsreact/configure/overview#configure-story-loading
   * to learn how to generate automatic titles
   */
-  title: 'YourComponent',
-  component: YourComponent,
+  title: 'FirstComponent',
+  component: FirstComponent,
 };
 
 //👇 We create a “template” of how args map to rendering
-const Template = (args) => <YourComponent {...args} />;
+const Template = (args) => <FirstComponent {...args} />;
 
 export const FirstStory = Template.bind({})
   FirstStory.args= {

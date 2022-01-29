@@ -1,7 +1,7 @@
 import React,{useState} from 'react';
 
 
-export const YourComponent = (props) => {
+export const FirstComponent = (props) => {
     const {primary} = props;
     const mode = primary ? 'storybook-button--primary' : 'storybook-button--secondary';
     const [name,setName] = useState('');
