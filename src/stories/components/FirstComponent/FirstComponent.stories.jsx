@@ -15,9 +15,9 @@ export default {
 //👇 We create a “template” of how args map to rendering
 const Template = (args) => <FirstComponent {...args} />;
 
-export const FirstStory = Template.bind({})
-  FirstStory.args= {
+export const Pepe = Template.bind({})
+  Pepe.args= {
     //👇 The args you need here will depend on your component
     primary: true,
-    label: 'Botón Dani' 
+    label: 'Botón Dani',
 };
