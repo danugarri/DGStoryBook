@@ -26,3 +26,12 @@
   width:150px;
   height: 100px;
 }
+.left{
+  text-align: left;
+}
+.center{
+  text-align: center;
+}
+.right{
+  text-align: right;
+}

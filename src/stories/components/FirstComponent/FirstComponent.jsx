@@ -4,7 +4,7 @@ import './FirstComponent.css';
 
 
 export const FirstComponent = (props) => {
-    const {primary,textColor,label,customStyle,customedClick,customSize} = props;
+    const {primary,textColor,label,customStyle,customSize,position} = props;
     const [name,setName] = useState('');
     const mode = primary ? 'storybook-button--primary' : 'storybook-button--secondary';
 
@@ -17,7 +17,7 @@ export const FirstComponent = (props) => {
     
     }
     return (
-        <>
+        <main className={position}>
             <button
                 className= {[`custom-size-${customSize}`,textColor,mode].join(' ')}
                 style= {customStyle}
@@ -26,21 +26,19 @@ export const FirstComponent = (props) => {
                 {label}
             </button>
             <p>{name}</p>
-        </>
+        </main>
     )
 }
 FirstComponent.prototype = {
     textColor: PropTypes.string,
     customStyle: PropTypes.object,
-    customedClick: PropTypes.func,
     customSize: PropTypes.oneOf(['small','medium','big']),
+    position: PropTypes.oneOf(['left','center','right']),
 }
 FirstComponent.defaultProps = {
-textColor:'textColor',
-customStyle:{
-    width:'100px'
-},
-customedClick: function  handleClick () {
-    alert('hola')
-}
+    textColor:'textColor',
+    customStyle:{
+        width:'100px'
+    },
+    position:'left'
 }

@@ -10,6 +10,16 @@ export default {
   */
   title: 'Test/First Component',
   component: FirstComponent,
+  argTypes: {
+    customSize:{
+      options: ['small','medium','big'],
+      control: { type: 'radio' }
+    },
+    position: {
+       options: ['center','left','right'],
+        // control: { type: 'select' } default value if options are defined
+    }
+  }
 };
 
 //👇 We create a “template” of how args map to rendering
