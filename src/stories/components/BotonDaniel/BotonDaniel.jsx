@@ -1,9 +1,9 @@
 import React,{useState} from 'react';
 import PropTypes from 'prop-types'
-import './FirstComponent.css';
+import './BotonDaniel.css';
 
 
-export const FirstComponent = (props) => {
+export const BotonDaniel = (props) => {
     const {primary,textColor,label,customStyle,customSize,position} = props;
     const [name,setName] = useState('');
     const mode = primary ? 'storybook-button--primary' : 'storybook-button--secondary';
@@ -29,13 +29,13 @@ export const FirstComponent = (props) => {
         </main>
     )
 }
-FirstComponent.prototype = {
+BotonDaniel.prototype = {
     textColor: PropTypes.string,
     customStyle: PropTypes.object,
     customSize: PropTypes.oneOf(['small','medium','big']),
     position: PropTypes.oneOf(['left','center','right']),
 }
-FirstComponent.defaultProps = {
+BotonDaniel.defaultProps = {
     textColor:'textColor',
     customStyle:{
         width:'100px'

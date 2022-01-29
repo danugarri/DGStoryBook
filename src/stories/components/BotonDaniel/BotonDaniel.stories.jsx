@@ -1,6 +1,6 @@
 // FirstComponent.stories.js|jsx
 
-import { FirstComponent } from './FirstComponent';
+import { BotonDaniel } from './BotonDaniel';
 
 //👇 This default export determines where your story goes in the story list
 export default {
@@ -8,8 +8,8 @@ export default {
   * See https://storybook.js.org/docsreact/configure/overview#configure-story-loading
   * to learn how to generate automatic titles
   */
-  title: 'Test/First Component',
-  component: FirstComponent,
+  title: 'Test/Botón Daniel',
+  component: BotonDaniel,
   argTypes: {
     customSize:{
       options: ['small','medium','big'],
@@ -23,25 +23,32 @@ export default {
 };
 
 //👇 We create a “template” of how args map to rendering
-const Template = (args) => <FirstComponent {...args} />;
+const Template = (args) => <BotonDaniel {...args} />;
 
 export const Primary = Template.bind({})
   Primary.args= {
-    //👇 The args you need here will depend on your component
+    
     primary: true,
     label: 'Botón Dani',
 };
 export const Small = Template.bind({})
   Small.args= {
-    //👇 The args you need here will depend on your component
+    
     primary: true,
     label: 'Botón Dani',
     customSize: 'small'
 };
 export const Medium = Template.bind({})
   Medium.args= {
-    //👇 The args you need here will depend on your component
+    
     primary: true,
     label: 'Botón Dani',
     customSize: 'medium'
+};
+export const Big = Template.bind({})
+  Big.args= {
+    
+    primary: true,
+    label: 'Botón Dani',
+    customSize: 'big'
 };
