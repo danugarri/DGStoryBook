@@ -4,7 +4,7 @@
   color:white
 }
 .storybook-button--secondary {
-  color: #333;
+  color: rgb(206, 197, 197);
   background-color: transparent;
   box-shadow: rgba(0, 0, 0, 0.15) 0px 0px 0px 1px inset;
   cursor: pointer;
