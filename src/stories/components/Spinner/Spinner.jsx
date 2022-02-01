@@ -9,15 +9,15 @@ export const Spinner = (props) => {
     const medium= customSize==='medium';
     const loaderSize= small ? {widthHeight:'30px',loaderMargin:' 0 -40px'} : medium ? {widthHeight:'40px',loaderMargin:' 0 -50px'} :{widthHeight:'60px',loaderMargin:' 0 -70px'}
     const { widthHeight,loaderMargin} =loaderSize
-    const animationColor= 'white';
+    // const animationColor= 'white';
     const insideLoaderColor = insideColor==='white' ? 'white':  insideColor==='none'? 'none' : null;
     //accessing the styleSheets array
     const styleSheet = document.styleSheets[1];
     console.log(styleSheet)
     //inserting the wanted style 
     // transition color for the spinner
-    styleSheet.insertRule(` @keyframes new_insert{0%{transform: rotate(0deg);}10%{border-right: 10px solid ${animationColor};}100% {transform: rotate(360deg);}} `,1)
-    styleSheet.insertRule(` @keyframes new_insert2{0%{transform: rotate(0deg);}20%{border-left: 10px solid ${animationColor};}100% {transform: rotate(360deg);}} `,2)
+    styleSheet.insertRule(` @keyframes new_insert{0%{transform: rotate(0deg);}10%{border-right: 10px solid ${colorFigure1};}100% {transform: rotate(360deg);}} `,1)
+    styleSheet.insertRule(` @keyframes new_insert2{0%{transform: rotate(0deg);}20%{border-left: 10px solid ${colorFigure2};}100% {transform: rotate(360deg);}} `,2)
    
 
    const loader1 = {
