@@ -4,12 +4,13 @@ import PropTypes from 'prop-types';
 
 
 export const Spinner = (props) => {
-    const{colorFigure1,colorFigure2,customSize,position} = props;
+    const{colorFigure1,colorFigure2,customSize,position,insideColor} = props;
     const small= customSize === 'small';
     const medium= customSize==='medium';
     const loaderSize= small ? {widthHeight:'30px',loaderMargin:' 0 -40px'} : medium ? {widthHeight:'40px',loaderMargin:' 0 -50px'} :{widthHeight:'60px',loaderMargin:' 0 -70px'}
     const { widthHeight,loaderMargin} =loaderSize
     const animationColor= 'white';
+    const insideLoaderColor = insideColor==='white' ? 'white':  insideColor==='none'? 'none' : null;
     //accessing the styleSheets array
     const styleSheet = document.styleSheets[1];
     console.log(styleSheet)
@@ -22,7 +23,7 @@ export const Spinner = (props) => {
    const loader1 = {
     width: widthHeight,
     height: widthHeight,
-    backgroundColor:'white',
+    backgroundColor: insideLoaderColor,
     margin :loaderMargin,
     border: `10px solid ${colorFigure1}`,
     borderRight: `10px solid white`,
@@ -36,7 +37,7 @@ export const Spinner = (props) => {
  const loader2 = {
     width: widthHeight,
     height: widthHeight,
-    backgroundColor:'white',
+    backgroundColor:insideLoaderColor,
     border: `10px solid ${colorFigure2}`,
     borderLeft: `10px solid white`,
     borderRadius:'50%',

@@ -10,6 +10,10 @@ export default {
       options: ['small','medium','big'],
       control: { type: 'radio' }
     },
+     insideColor:{
+      options: ['white','transparent'],
+      control: { type: 'radio' }
+    },
     position: {
        options: ['center','left','right'],
          control: { type: 'select' }
@@ -32,5 +36,8 @@ const Template = (args) => <Spinner {...args} />;
 
 export const Primary = Template.bind({})
   Primary.args= {
-    colorFigure1: 'blue'
+    colorFigure1: 'blue',
+    colorFigure2: 'blue',
+    position: 'center',
+  
 };

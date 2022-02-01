@@ -1,7 +1,7 @@
 .loader1 {
   width: 30px;
   height: 30px;
-  background-color:white;
+  /* background-color:white; */
   margin : 0 -40px;
   border: 10px solid #BD4E1E;
   border-right: 10px solid white;
@@ -23,7 +23,7 @@
 .loader2 {
   width: 30px;
   height: 30px;
-  background-color:white;
+  /* background-color:white; */
   border: 10px solid #BD4E1E;
   border-left: 10px solid white;
   border-radius: 50%;
