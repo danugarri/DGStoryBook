@@ -4,7 +4,7 @@ import './BotonDaniel.css';
 
 
 export const BotonDaniel = (props) => {
-    const {primary,textColor,label,customStyle,customSize,position} = props;
+    const {primary,label,customSize,position,buttonColor} = props;
     const [name,setName] = useState('');
     const mode = primary ? 'storybook-button--primary' : 'storybook-button--secondary';
 
@@ -12,14 +12,15 @@ export const BotonDaniel = (props) => {
         setName('Hola soy Daniel')
         if(name !=='') {
             setName('')
-        }
- 
-    
+        }  
+    }
+    const customStyle= {
+        backgroundColor : buttonColor,
     }
     return (
         <main className={position}>
             <button
-                className= {[`custom-size-${customSize}`,textColor,mode].join(' ')}
+                className= {[`custom-size-${customSize}`,mode].join(' ')}
                 style= {customStyle}
                 onClick= {handleClick}
             >
@@ -30,15 +31,16 @@ export const BotonDaniel = (props) => {
     )
 }
 BotonDaniel.prototype = {
-    textColor: PropTypes.string,
     customStyle: PropTypes.object,
     customSize: PropTypes.oneOf(['small','medium','big']),
     position: PropTypes.oneOf(['left','center','right']),
+    primary: PropTypes.string,
+    label: PropTypes.string,
+    buttonColor: PropTypes.string
 }
 BotonDaniel.defaultProps = {
-    textColor:'textColor',
     customStyle:{
-        width:'100px'
+        width:'100px',
     },
     position:'left'
 }

@@ -1,13 +1,8 @@
-// FirstComponent.stories.js|jsx
-
 import { BotonDaniel } from './BotonDaniel';
 
-//👇 This default export determines where your story goes in the story list
+
 export default {
-  /* 👇 The title prop is optional.
-  * See https://storybook.js.org/docsreact/configure/overview#configure-story-loading
-  * to learn how to generate automatic titles
-  */
+
   title: 'Test/Botón Daniel',
   component: BotonDaniel,
   argTypes: {
@@ -18,6 +13,11 @@ export default {
     position: {
        options: ['center','left','right'],
         // control: { type: 'select' } default value if options are defined
+    },
+    buttonColor: {
+      control: {
+        type: 'color'
+      }
     }
   }
 };
@@ -30,6 +30,7 @@ export const Primary = Template.bind({})
     
     primary: true,
     label: 'Botón Dani',
+    buttonColor: 'red'
 };
 export const Small = Template.bind({})
   Small.args= {

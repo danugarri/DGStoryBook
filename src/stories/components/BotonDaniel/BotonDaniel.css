@@ -1,9 +1,7 @@
 .storybook-button--primary {
   cursor: pointer;
-  background-color: #1ea7fd;
-}
-.textColor{
-  color:rgb(243, 236, 236);
+  background-color: #1ea7fd !important;
+  color:white
 }
 .storybook-button--secondary {
   color: #333;
