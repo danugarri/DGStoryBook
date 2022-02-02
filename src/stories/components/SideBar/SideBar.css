@@ -31,3 +31,17 @@
 a{
   text-decoration: none;
 }
+.top{
+  position:relative;
+  top:10px
+}
+.middle{
+  
+  position:relative;
+  top:150px
+
+}
+.bottom{
+   position:relative;
+  top:300px
+}

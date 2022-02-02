@@ -8,7 +8,7 @@ import PropTypes from 'prop-types'
 
 
 export const SideBar = (props) => {
-    const {showSidebar} = props;
+    const {showSidebar,position} = props;
     const [localShowSidebar, setLocalShowSidebar] = useState(false)
     const right = <FontAwesomeIcon icon={faArrowRight} />;
     const left = <FontAwesomeIcon icon={faArrowLeft} />;
@@ -24,7 +24,7 @@ export const SideBar = (props) => {
     
     return(
 
-        <div id ='sideBar-container'>
+        <div id ='sideBar-container' className={position}>
            { showSidebar || localShowSidebar ?<div className='show'><button onClick= {() => setLocalShowSidebar(!localShowSidebar)}>{left}</button>{sideBarBody}</div> 
            : <div className='hide'><button onClick= {() => setLocalShowSidebar(!localShowSidebar)}>{right}</button></div>
            }
@@ -35,7 +35,8 @@ export const SideBar = (props) => {
 
  SideBar.prototype= {
     setShowSideBar: PropTypes.func,
-    showSidebar: PropTypes.bool
+    showSidebar: PropTypes.bool,
+    position: PropTypes.string
     }
     SideBar.defaultPorps= {
     showSideBar: false,

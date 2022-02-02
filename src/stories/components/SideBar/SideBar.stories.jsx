@@ -10,6 +10,12 @@ export default {
     control: {
         type:'boolean'
     }
+    },
+    position: {
+      options: ['top', 'middle', 'bottom'],
+      control: {
+        type: 'select'
+      }
     }
 }
 }
@@ -19,6 +25,6 @@ const Template = (args) => <SideBar {...args} />;
 export const Primary = Template.bind({})
   Primary.args= {
    
-    position: 'center',
+    position: 'top',
     showSidebar: false
 };
