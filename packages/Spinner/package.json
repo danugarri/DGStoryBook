@@ -1,12 +1,11 @@
 {
   "name": "spinner",
-  "version": "1.0.3",
-  "description": "Spinner",
+  "version": "1.0.0",
+  "description": "spinner",
   "main": "Spinner.jsx",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "author": "Daniel Garrido",
-  "license": "ISC",
-  "gitHead": "ea0b3c9b782ee67bab338a341aaa6e8bd594e768"
+  "license": "ISC"
 }
