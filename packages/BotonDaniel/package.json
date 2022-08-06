@@ -7,5 +7,6 @@
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "author": "Daniel Garrido",
-  "license": "ISC"
+  "license": "ISC",
+  "gitHead": "ea0b3c9b782ee67bab338a341aaa6e8bd594e768"
 }
