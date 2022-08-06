@@ -1,6 +1,6 @@
 {
   "name": "botondaniel",
-  "version": "1.0.2",
+  "version": "1.0.3",
   "description": "This is a basic button component",
   "main": "BotonDaniel.jsx",
   "scripts": {
