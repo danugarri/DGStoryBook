@@ -1,0 +1,15 @@
+
+#container{
+    display:flex;
+    flex-direction: row;
+    filter: drop-shadow(0px 0px 8px gray);
+}
+.left{
+ margin: 15% 15%;
+}
+.center{
+  margin: 15% 45%;
+}
+.right{
+ margin: 15% 75%;
+}
